@@ -2,13 +2,17 @@
 void main() {
 	
 	int key, flag=0, pos, i,n;
+
+	printf("Enter number of elements");
 	scanf("%d",&n);
 	int a[n];
 
+	printf("Enter the elements");
 	for(i=0;i<n;i++){
 		scanf("%d", &a[i]);
 	}
 
+	printf("Enter Element to be searched");
 	scanf("%d",&key);
 
 	for(i=0;i<n;i++){
@@ -22,4 +26,5 @@ void main() {
 	} else {
 		printf("%d not found\n", key);
 	}
+
 }
